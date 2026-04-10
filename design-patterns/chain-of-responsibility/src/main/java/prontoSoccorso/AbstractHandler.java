@@ -1,6 +1,6 @@
 package prontoSoccorso;
 
-public class AbstractHandler implements Handler{
+public abstract class AbstractHandler implements Handler{
     private Handler next;
 
     @Override

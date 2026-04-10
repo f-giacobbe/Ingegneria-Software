@@ -1,1 +1,1 @@
-# Repository ufficiale del corso di Ingegneria del Software
+# Repository non-ufficiale del corso di Ingegneria del Software

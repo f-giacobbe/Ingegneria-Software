@@ -11,4 +11,4 @@ venv*/
 .idea/libraries/
 *.iws
 *.iml
-*.ipr
+*.ipr.*

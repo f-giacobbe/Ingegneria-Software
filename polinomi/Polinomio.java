@@ -21,7 +21,7 @@ public interface Polinomio extends Iterable<Monomio> {
 	 */
 	default int size() {
 		int k = 0;
-		for (@SuppressWarnings("unused") Monomio m : this) {
+		for (@SuppressWarnings("unused") Monomio m : this) {	// Rende Polinomio client di sé stesso (usa l'iterator)
 			++k;
 		}
 		return k;

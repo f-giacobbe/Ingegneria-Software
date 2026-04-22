@@ -4,7 +4,7 @@ public final class PolinomioFactory {
 
     private PolinomioFactory(){}
 
-    private static PolinomioAstratto  prototype;
+    private static PolinomioAstratto prototype;
 
     static {
         registerPrototype(new PolinomioArray());

@@ -49,7 +49,7 @@ public class PolinomioArray extends PolinomioAstratto {
 	}
 
 	/**
-	 * @see is.polinomi.Polinomio#add(is.polinomi.Monomio)
+	 * @see Polinomio#add(Monomio)
 	 */
 	@Override
 	public void addMod(Monomio m) {

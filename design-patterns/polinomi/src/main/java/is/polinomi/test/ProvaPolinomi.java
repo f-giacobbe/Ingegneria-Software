@@ -3,8 +3,6 @@ package is.polinomi.test;
 import is.polinomi.Monomio;
 import is.polinomi.Polinomio;
 import is.polinomi.factorymethod.PolinomioTreeMap;
-import is.polinomi.prototype.PolinomioArray;
-import is.polinomi.prototype.PolinomioFactory;
 import is.polinomi.prototype.PolinomioLL;
 //import is.polinomi.factorymethod.PolinomioLL;
 //import is.polinomi.bridge.PolinomioArrayFactory;
@@ -91,9 +89,9 @@ public class ProvaPolinomi {
     }
 
     static void testList(){
-        Polinomio p1= new is.polinomi.prototype.PolinomioLL();
+        Polinomio p1= new PolinomioLL();
         Polinomio p2= new is.polinomi.factorymethod.PolinomioLL();
-        Polinomio p3= new is.polinomi.bridge.PolinomioConcreto();
+        Polinomio p3= new PolinomioConcreto();
 
         p1=p1.add(new Monomio(3,4)).add(new Monomio(5,1));
         p2=p2.add(new Monomio(3,4)).add(new Monomio(5,1));

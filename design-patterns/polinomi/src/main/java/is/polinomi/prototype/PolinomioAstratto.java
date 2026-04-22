@@ -3,8 +3,6 @@ package is.polinomi.prototype;
 import is.polinomi.Monomio;
 import is.polinomi.Polinomio;
 
-import java.util.Iterator;
-
 
 /**
  *

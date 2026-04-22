@@ -1,5 +1,7 @@
 package is.polinomi;
 
+import is.polinomi.Monomio;
+
 /**
  * Eccezione sollevata dal costruttore {@link Monomio#Monomio(double, int)} se
  * il grado specificato &egrave; negativo

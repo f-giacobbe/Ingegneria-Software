@@ -12,7 +12,7 @@
         <module name="junit-example-contact-manager" />
         <module name="polinomi" />
         <module name="mediator" />
-        <module name="chain-of-responsibility" />
+        <module name="chainOfResponsibility" />
       </profile>
       <profile name="Annotation profile for design-patterns" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -26,6 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="chain-of-responsibility" target="21" />
       <module name="ChainOfResponsability" target="21" />
       <module name="design-patterns (1)" target="21" />
       <module name="DTO" target="1.8" />

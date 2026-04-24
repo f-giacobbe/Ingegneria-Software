@@ -16,6 +16,8 @@ import java.util.Iterator;
  * @author Angelo Furfaro
  *
  */
+
+// Sarebbe la Abstraction (non deve per forza essere una classe astratta)
 public class PolinomioConcreto implements Polinomio {
 
     // setta il factory predefinito

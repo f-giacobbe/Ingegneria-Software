@@ -13,7 +13,7 @@ public final class ListaCopyOnWrite<E> implements Lista<E> {
             throw new IllegalArgumentException("Proxy multipli non ammessi");
 
         refHolder = new ReferenceCounterHolder<>(new ReferenceCounter<>(l));
-        CLEANER.register(this, refHolder);
+        CLEANER.register(this, refHolder);  // Observer pattern. refHolder deve essere Runnable.
 
     }
 

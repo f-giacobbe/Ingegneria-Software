@@ -13,6 +13,7 @@
         <module name="polinomi" />
         <module name="mediator" />
         <module name="chainOfResponsibility" />
+        <module name="contact-manager" />
       </profile>
       <profile name="Annotation profile for design-patterns" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />

@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option java_package = "it.ingsw.proto"; option java_outer_classname = "RubricaProto"; option java_multiple_files = true;
+
+package rubrica;
+
+message Person {
+  string nome = 1;
+  string cognome = 2;
+  int32 telefono = 3;
+}
+
+message Result {
+  bool res = 1;
+}
+
+message NomeContatto {
+  string nome = 1;
+  string cognome = 2;
+}
+
+message ListRequest {
+
+}
+
+message ContactList {
+  repeated Person contatti = 1;
+}
+
+service Rubrica {
+  rpc AddContact (Person)        returns (Result);
+  rpc GetContact (NomeContatto)  returns (Person);
+  rpc GetAll     (ListRequest)   returns (ContactList);
+}

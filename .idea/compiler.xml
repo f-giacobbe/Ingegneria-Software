@@ -22,7 +22,6 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
         </processorPath>
         <module name="dto" />
       </profile>
@@ -34,6 +33,7 @@
       <module name="DTO" target="1.8" />
       <module name="ingsw" target="21" />
       <module name="ingsw-dto" target="1.8" />
+      <module name="rubrica" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>

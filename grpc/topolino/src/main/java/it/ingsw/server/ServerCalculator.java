@@ -5,12 +5,16 @@ import io.grpc.ServerBuilder;
 
 import java.io.IOException;
 
+/*
+Il server è uguale sia per la calcolatrice che per la rubrica
+ */
 public class ServerCalculator {
     public static void main(String[] args) {
         try {
             Server server = ServerBuilder
                     .forPort(50010)
                     .addService(new CalculatorImpl())
+                    .addService(new RubricaImpl())
                     .build()
                     .start();
 

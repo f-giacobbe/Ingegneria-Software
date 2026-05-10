@@ -13,7 +13,7 @@ public class Main {
                 .usePlaintext()
                 .build();
 
-        CalculatorGrpc.CalculatorBlockingStub stub =
+        CalculatorGrpc.CalculatorBlockingStub stub =        // Blocking stub -> sincrono
                 CalculatorGrpc.newBlockingStub(channel);
 
         OperationRequest request = OperationRequest.newBuilder()

@@ -12,6 +12,7 @@
         <module name="simple_grpc" />
         <module name="junit-example-contact-manager" />
         <module name="polinomi" />
+        <module name="example_grpc" />
         <module name="mediator" />
         <module name="chainOfResponsibility" />
         <module name="contact-manager" />

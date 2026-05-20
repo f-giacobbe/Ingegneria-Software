@@ -17,8 +17,6 @@
     <file url="file://$PROJECT_DIR$/design-patterns/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/designPatterns_old/DTO/ingsw/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/designPatterns_old/DTO/ingsw/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gRPC/rubrica/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gRPC/rubrica/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gRPC/simple_grpc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gRPC/simple_grpc/src/main/proto" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gRPC/simple_grpc/src/main/resources" charset="UTF-8" />
@@ -26,7 +24,13 @@
     <file url="file://$PROJECT_DIR$/gRPC/simple_grpc/target/generated-sources/protobuf/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gRPC/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gRPC/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gRPC/topolino/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gRPC/topolino/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc/example_grpc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc/example_grpc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc/simple_grpc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc/simple_grpc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc/topolino/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/grpc/topolino/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package it.ingsw.client;
 
+import com.google.cloud.location.ListLocationsRequest;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import it.ingsw.proto.*;
@@ -17,6 +18,7 @@ public class Main {
         System.out.println("Risultato addizione:" + or.getRes());
     }
 
+<<<<<<< HEAD
     private static void rubrica(ManagedChannel channel) {
         RubricaGrpc.RubricaBlockingStub stub = RubricaGrpc.newBlockingStub(channel);
 
@@ -45,6 +47,14 @@ public class Main {
                 .build();
 
         rubrica(channel);
+=======
+        RubricaGrpc.RubricaBlockingStub rubricaStub = RubricaGrpc.newBlockingStub(channel);
+
+
+        ContactList lr = rubricaStub.getAll(null);
+        System.out.println("LA MIA RUBRICA:" + lr);
+
+>>>>>>> main
 
         channel.shutdown();
     }

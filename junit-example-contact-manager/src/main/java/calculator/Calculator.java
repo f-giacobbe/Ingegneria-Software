@@ -16,4 +16,26 @@ public class Calculator {
         }
         return a / b;
     }
+
+    // Estensione
+    public double power(double base, int exp) {
+        if (exp < 0) {
+            throw new IllegalArgumentException();
+        }
+        return Math.pow(base, exp);
+    }
+
+    public double sqrt(double n) {
+        if (n < 0) {
+            throw new IllegalArgumentException();
+        }
+        return Math.sqrt(n);
+    }
+
+    public double remainder(double a, double b) {
+        if (b == 0) {
+            throw new IllegalArgumentException();
+        }
+        return a % b;
+    }
 }

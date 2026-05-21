@@ -1,5 +1,7 @@
 import calculator.Calculator;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.condition.EnabledOnOs;
+import org.junit.jupiter.api.condition.OS;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -8,6 +10,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 public class CalculatorTest {
     private Calculator calculator;
@@ -43,6 +46,11 @@ public class CalculatorTest {
         public void csvAdd(double a, double b, double res) {
             assertEquals(res, calculator.add(a, b), DELTA);
         }
+
+        @RepeatedTest(10)
+        public void add37() {
+            assertEquals(10, calculator.add(3,7));
+        }
     }
 
 
@@ -77,6 +85,11 @@ public class CalculatorTest {
         @CsvFileSource(resources = "/calculator_test_mul.csv")
         public void csvMul(double a, double b, double res) {
             assertEquals(res, calculator.multiply(a, b), DELTA);
+        }
+
+        @RepeatedTest(5)
+        public void mulStability() {
+            assertEquals(6, calculator.multiply(-2, -3));
         }
     }
 
@@ -133,5 +146,25 @@ public class CalculatorTest {
                 () -> {assertEquals(a-b, calculator.subtract(a, b), DELTA);},
                 () -> {assertEquals(a*b, calculator.multiply(a, b), DELTA);},
                 () -> {assertEquals(a/b, calculator.divide(a, b), DELTA);});
+    }
+
+
+    @EnabledOnOs(value = OS.LINUX)
+    public void testOnLinux() {
+        assumeTrue(System.getProperty("os.name").contains("Linux"));
+    }
+
+    @Test
+    public void testFalse() {
+        assumeTrue(false, "Sempre skippato");
+    }
+
+
+    @Nested
+    class ExtendedTests {
+        @Test
+        public void testThrows() {
+            assertThrows(IllegalArgumentException.class, () -> calculator.sqrt(-1));
+        }
     }
 }

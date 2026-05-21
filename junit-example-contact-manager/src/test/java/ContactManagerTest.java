@@ -14,6 +14,9 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
+/*
+Dovrebbe essere scritto da un terzo attore, che magari conosce solo la firma dei vari metodi
+ */
 public class ContactManagerTest {
 
     private ContactManager contactManager;
@@ -88,6 +91,9 @@ public class ContactManagerTest {
     }
 
 
+    /*
+    Per testare moduli specifici, utilizzo le classi innestate. Non funzionano BeforeEach, AfterEach, ...
+     */
     @Nested
     class RepeatedTests {
         @DisplayName("Repeat Contact Creation Test 5 Times")
